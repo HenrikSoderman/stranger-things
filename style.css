@@ -1,0 +1,138 @@
+* { /* basinställningar för sidorna: vit text, ingen padding eller margin, teckensnittet helvetica */
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: helvetica;
+}
+
+a { /* länkarnas utseende */
+  text-decoration: none;
+  color: white;
+}
+
+p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknande. */
+  z-index: 3;
+}
+
+.nav-container { /* styling för navigeringsmenyn. Ställer in en grå färg, hur mycket fetstil texten har, teckenstorlek, pressar ihop texten lite, z-index mm.   */
+  background-color: rgb(33, 33, 33);
+  font-weight: 700;
+  letter-spacing: -2px;
+  font-size: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.logo { /* styling för loggan i navigeringsmenyn */
+  width: 100px;
+  position: relative;
+  top: 5px;
+  left: 15px;
+}
+
+.navlinks { /* styling för länkarna i navigeringsmenyn */
+  list-style-type: none;
+  display: flex;
+  float: right;
+  align-items: center;
+  padding: 13px;
+}
+
+.navlink { /*  */
+  padding: 0px 30px;
+}
+
+.index-container { /* ger sidans huvudinnehåll bakgrundsfärgen svart */
+  background-color: black;
+}
+
+.indexh1 { /* byter teckenstorlek och teckensnitt på startsidans huvudrubrik */
+  font-size: 50px;
+  font-family: itc-benguiat, serif;
+}
+
+.reviewtext { /* ger recensionen italic-stilen, centrerar den  */
+  font-style: italic;
+  margin: auto;
+}
+
+.star { /* ställer in storleken och positionerar stjärnsymbolen bredvid seriens betyg */
+  width: 30px;
+  float: right;
+  margin-left: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.imdb { /* ställer in storleken och positionerar imdb-loggan */
+  width: 70px;
+  margin: auto;
+}
+
+.rating { /* ställer in textstorleken, textmellanrummet och centrerar texten. */
+  letter-spacing: -1px;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.poster { /* ställer in storleken och positionerar startsidans stora bild */
+  width: 100%;
+  margin-top: 15px;
+}
+
+.seasons-container { /* ger div-elementet/containern för seasons-sidan svart bakgrund och gör överflödig innehåll synligt */
+  background-color: black;
+  overflow: visible;
+}
+
+.simg { /* ställer in storleken och z-index för de tre säsongs-affischerna. */
+  width: 100%;
+  z-index: 3;
+}
+
+.seasonh1 { /* styling för säsongsidans huvudrubrik */
+  font-family: helvetica;
+  font-weight: 700;
+  letter-spacing: -2px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.background { /* en div som endast agerar som bakgrundsfärg, grå. */
+  background-color: rgb(33, 33, 33);
+  z-index: 2;
+}
+
+.sh2 { /* h2-elementet för de olika säsongernas rubriker */
+  text-align: center;
+}
+
+.cast-container { /* div/container för cast-sidans huvdinnehåll */
+  background-color: black;
+}
+
+.castimg { /* ställer in storleken för skådespelarnas porträtt och gör de cirkulära */
+  width: 100%;
+  border-radius: 50%;
+}
+
+.character { /* div-elementen för de olika karaktärernas information, grupperar bild och namn */
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px){ /* media-query för skärmar mindre än 600px i bredd */
+
+  .indexh1 { /* gör indexsidans huvudrubrik lite större */
+    font-size: 65px;
+  }
+
+}
+
+.toplink { /* centrerar länken som tar dig till toppen av sidan. */
+  margin: auto;
+  color: white;
+}
