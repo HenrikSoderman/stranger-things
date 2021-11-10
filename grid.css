@@ -79,37 +79,37 @@
 
   .indexh1 { /* flyttar ner startsidans huvudrubrik */
     grid-column: 2/12;
-    grid-row: 17/18;
+    grid-row: 14/16;
   }
 
   .review-container { /* flyttar ner recensions-containern */
     grid-column: 2/6;
-    grid-row: 19/20;
+    grid-row: 17/18;
   }
 
   .abouth { /* flyttar ner rubriken "About" */
     grid-column: 2/3;
-    grid-row: 21/22;
+    grid-row: 19/20;
   }
 
   .aboutp { /* flyttar ner tillhörande paragraftext */
     grid-column: 2/6;
-    grid-row: 22/25;
+    grid-row: 20/23;
   }
 
   .ploth { /* flyttar ner rubriken "Plot" */
     grid-column: 2/3;
-    grid-row: 26/27;
+    grid-row: 24/25;
   }
 
   .plotp { /* flyttar ner tillhörande paragraftext */
     grid-column: 2/6;
-    grid-row: 27/29;
+    grid-row: 26/28;
   }
 
   .poster { /* flyttar upp sidans stora bild, den lägger sig nu högst upp på sidan */
     grid-column: 1/-1;
-    grid-row: 1/16;
+    grid-row: 1/13;
   }
 
 }
