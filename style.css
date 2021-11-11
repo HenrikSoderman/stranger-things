@@ -127,7 +127,7 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 @media screen and (max-width: 600px){ /* media-query för skärmar mindre än 600px i bredd */
 
   .navlink {
-    padding: 5%;
+    padding: 0px 10px;
   }
 
   .indexh1 { /* gör indexsidans huvudrubrik lite större */
