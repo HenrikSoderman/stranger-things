@@ -2,7 +2,7 @@
 /* NAVIGERINGSMENY */
 .nav-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* definierar kolumner och rader för navigeringsmenyn-container */
+  grid-template-columns: 120px 1fr 1fr 550px; /* definierar kolumner och rader för navigeringsmenyn-container */
   grid-template-rows: 65px;
   grid-column: 1/-1; /* navigeringsmenyn ska sträcka sig längs hela toppen av sidan */
 }
@@ -14,7 +14,7 @@
 
 .navlinks { /* positionerar navlinks-flexboxen som innehåller navigeringsmenyns länkar  */
   display: flex;
-  grid-column: 3/-1;
+  grid-column: 4/-1;
   grid-row: 1/2;
 }
 
@@ -73,7 +73,19 @@
   grid-row: 1/16;
 }
 
-@media screen and (max-width: 600px){ /* Denna media query ändrar layouten på starstidan för skärmar 600px och smalare */
+
+@media screen and (max-width: 800px){ /* Denna media query ändrar layouten på starstidan för skärmar 600px och smalare */
+
+  .nav-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* definierar kolumner och rader för navigeringsmenyn-container */
+    grid-template-rows: 65px;
+    grid-column: 1/-1; /* navigeringsmenyn ska sträcka sig längs hela toppen av sidan */
+  }
+
+  .navlinks {
+    grid-column: 3/4;
+  }
 
   .index-container { /* ändrar antalet kolumner i griden till huvudinnehållet */
     grid-template-columns: repeat(6, 1fr);

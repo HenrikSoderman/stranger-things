@@ -22,6 +22,7 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   position: fixed;
   width: 100%;
   z-index: 5;
+
 }
 
 .logo { /* styling för loggan i navigeringsmenyn */
@@ -40,7 +41,7 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 }
 
 .navlink { /*  */
-  padding: 0px 30px;
+  padding: 0px 3%;
 }
 
 .index-container { /* ger sidans huvudinnehåll bakgrundsfärgen svart */
@@ -124,16 +125,37 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   width: 100%;
 }
 
-@media screen and (max-width: 600px){ /* media-query för skärmar mindre än 600px i bredd */
+@media screen and (max-width: 800px){ /* media-query för skärmar mindre än 600px i bredd */
 
   .navlink {
     padding: 0px 10px;
+    font-size: 25px;
   }
 
   .indexh1 { /* gör indexsidans huvudrubrik lite större */
     font-size: 65px;
   }
 
+}
+
+@media screen and (max-width: 500px){
+
+   .navlink {
+    padding: 0px 5px;
+    font-size: 20px;
+  }
+
+
+  .logo {
+    width: 70px;
+    position: relative;
+    top: 15px;
+    left: 5px;
+  }
+
+  .navlinks {
+    padding: 0px 0px;
+  }
 }
 
 .toplink { /* centrerar länken som tar dig till toppen av sidan. */
