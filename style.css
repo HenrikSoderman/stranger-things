@@ -141,6 +141,11 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 .character {
   text-align: center;
   width: 100%;
+  padding-top: 50%;
+}
+
+#bob #barb {
+  padding-bottom: 50%;
 }
 
 /* media-query för skärmar mindre än 800px i bredd */
@@ -157,6 +162,9 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
     font-size: 65px;
   }
 
+  .character {
+    font-size: 70%;
+  }
 }
 
 /* media-query för skärmar mindre än 500px i bredd */
@@ -187,5 +195,3 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   margin: auto;
   color: white;
 }
-
-.
