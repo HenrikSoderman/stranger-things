@@ -14,7 +14,8 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   z-index: 3;
 }
 
-.nav-container { /* styling för navigeringsmenyn. Ställer in en grå färg, hur mycket fetstil texten har, teckenstorlek, pressar ihop texten lite, z-index mm.   */
+/* styling för navigeringsmenyn. Ställer in en grå färg, hur mycket fetstil texten har, teckenstorlek, pressar ihop texten lite, z-index mm.   */
+.nav-container {
   background-color: rgb(33, 33, 33);
   font-weight: 700;
   letter-spacing: -2px;
@@ -25,14 +26,16 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 
 }
 
-.logo { /* styling för loggan i navigeringsmenyn */
+/* styling för loggan i navigeringsmenyn */
+.logo {
   width: 100px;
   position: relative;
   top: 5px;
   left: 15px;
 }
 
-.navlinks { /* styling för länkarna i navigeringsmenyn */
+/* styling för länkarna i navigeringsmenyn */
+.navlinks {
   list-style-type: none;
   display: flex;
   float: right;
@@ -40,25 +43,29 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   padding: 13px;
 }
 
-.navlink { /*  */
+.navlink {
   padding: 0px 3%;
 }
 
-.index-container { /* ger sidans huvudinnehåll bakgrundsfärgen svart */
+/* ger sidans huvudinnehåll bakgrundsfärgen svart */
+.index-container {
   background-color: black;
 }
 
-.indexh1 { /* byter teckenstorlek och teckensnitt på startsidans huvudrubrik */
+/* byter teckenstorlek och teckensnitt på startsidans huvudrubrik */
+.indexh1 {
   font-size: 50px;
   font-family: itc-benguiat, serif;
 }
 
-.reviewtext { /* ger recensionen italic-stilen, centrerar den  */
+/* ger recensionen italic-stilen, centrerar den  */
+.reviewtext {
   font-style: italic;
   margin: auto;
 }
 
-.star { /* ställer in storleken och positionerar stjärnsymbolen bredvid seriens betyg */
+/* ställer in storleken och positionerar stjärnsymbolen bredvid seriens betyg */
+.star {
   width: 30px;
   float: right;
   margin-left: 70%;
@@ -66,12 +73,14 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   margin-bottom: auto;
 }
 
-.imdb { /* ställer in storleken och positionerar imdb-loggan */
+/* ställer in storleken och positionerar imdb-loggan */
+.imdb {
   width: 70px;
   margin: auto;
 }
 
-.rating { /* ställer in textstorleken, textmellanrummet och centrerar texten. */
+ /* ställer in textstorleken, textmellanrummet och centrerar texten. */
+.rating {
   letter-spacing: -1px;
   font-weight: 700;
   font-size: 40px;
@@ -79,22 +88,26 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   width: 100%;
 }
 
-.poster { /* ställer in storleken och positionerar startsidans stora bild */
+/* ställer in storleken och positionerar startsidans stora bild */
+.poster {
   width: 100%;
   margin-top: 15px;
 }
 
-.seasons-container { /* ger div-elementet/containern för seasons-sidan svart bakgrund och gör överflödig innehåll synligt */
+/* ger div-elementet/containern för seasons-sidan svart bakgrund och gör överflödig innehåll synligt */
+.seasons-container {
   background-color: black;
   overflow: visible;
 }
 
-.simg { /* ställer in storleken och z-index för de tre säsongs-affischerna. */
+/* ställer in storleken och z-index för de tre säsongs-affischerna. */
+.simg {
   width: 100%;
   z-index: 3;
 }
 
-.seasonh1 { /* styling för säsongsidans huvudrubrik */
+/* styling för säsongsidans huvudrubrik */
+.seasonh1 {
   font-family: helvetica;
   font-weight: 700;
   letter-spacing: -2px;
@@ -102,50 +115,60 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   text-align: center;
 }
 
-.background { /* en div som endast agerar som bakgrundsfärg, grå. */
+/* en div som endast agerar som bakgrundsfärg, grå. */
+.background {
   background-color: rgb(33, 33, 33);
   z-index: 2;
 }
 
-.sh2 { /* h2-elementet för de olika säsongernas rubriker */
+/* h2-elementet för de olika säsongernas rubriker */
+.sh2 {
   text-align: center;
 }
 
-.cast-container { /* div/container för cast-sidans huvdinnehåll */
+/* div/container för cast-sidans huvdinnehåll */
+.cast-container {
   background-color: black;
 }
 
-.castimg { /* ställer in storleken för skådespelarnas porträtt och gör de cirkulära */
+/* ställer in storleken för skådespelarnas porträtt och gör de cirkulära */
+.castimg {
   width: 100%;
   border-radius: 50%;
 }
 
-.character { /* div-elementen för de olika karaktärernas information, grupperar bild och namn */
+/* div-elementen för de olika karaktärernas information, grupperar bild och namn */
+.character {
   text-align: center;
   width: 100%;
 }
 
-@media screen and (max-width: 800px){ /* media-query för skärmar mindre än 600px i bredd */
+/* media-query för skärmar mindre än 800px i bredd */
+@media screen and (max-width: 800px){
 
+/* minskar padding och typsnitt på navigeryngsmenyns länkar */
   .navlink {
     padding: 0px 10px;
     font-size: 25px;
   }
 
-  .indexh1 { /* gör indexsidans huvudrubrik lite större */
+/* gör indexsidans huvudrubrik lite större */
+  .indexh1 {
     font-size: 65px;
   }
 
 }
 
+/* media-query för skärmar mindre än 500px i bredd */
 @media screen and (max-width: 500px){
 
+/* minskar padding och typsnitt på navigeryngsmenyns länkar */
    .navlink {
     padding: 0px 5px;
     font-size: 20px;
   }
 
-
+/* minskar loggans storlek */
   .logo {
     width: 70px;
     position: relative;
@@ -153,12 +176,14 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
     left: 5px;
   }
 
+/* minskar padding på navigeringsmenyns flexbox */
   .navlinks {
     padding: 0px 0px;
   }
 }
 
-.toplink { /* centrerar länken som tar dig till toppen av sidan. */
+/* centrerar länken som tar dig till toppen av sidan. */
+.toplink {
   margin: auto;
   color: white;
 }
