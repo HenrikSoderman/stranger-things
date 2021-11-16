@@ -197,7 +197,7 @@
 .seasons-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-auto-rows: minmax(50px, auto);
+  grid-auto-rows: auto;
 }
 
 /* positionerar huvudrubriken för säsongssidan */
