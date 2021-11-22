@@ -94,13 +94,13 @@
 /* definierar färre kolumner för navigeringsmenyn-containern */
   .nav-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 0.7fr 3fr;
     grid-template-rows: 65px;
     grid-column: 1/-1;
   }
 
   .navlinks {
-    grid-column: 3/4;
+    grid-column: 2/3;
   }
 
 /* ändrar antalet kolumner i griden till huvudinnehållet */
@@ -159,7 +159,6 @@
   .index-container {
     grid-template-columns: repeat(6, 1fr);
   }
-
 
 
 
@@ -239,8 +238,9 @@
   grid-row: 5/6;
 }
 
-/* definierar containern för castsidan */
+
 /* CASTSIDAN */
+/* definierar containern för castsidan */
 .cast-container {
   display: grid;
   grid-template-columns: repeat(13, 1fr);

@@ -3,6 +3,7 @@
   padding: 0;
   color: white;
   font-family: helvetica;
+
 }
 
 a { /* länkarnas utseende */
@@ -12,6 +13,10 @@ a { /* länkarnas utseende */
 
 p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknande. */
   z-index: 3;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 /* styling för navigeringsmenyn. Ställer in en grå färg, hur mycket fetstil texten har, teckenstorlek, pressar ihop texten lite, z-index mm.   */
@@ -24,14 +29,17 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   width: 100%;
   z-index: 5;
 
+
+
 }
 
 /* styling för loggan i navigeringsmenyn */
 .logo {
-  width: 100px;
+  height: 80%;
   position: relative;
-  top: 5px;
-  left: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 3vw;
 }
 
 /* styling för länkarna i navigeringsmenyn */
@@ -40,7 +48,8 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   display: flex;
   float: right;
   align-items: center;
-  padding: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .navlink {
@@ -159,8 +168,13 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 
 /* minskar padding och typsnitt på navigeryngsmenyns länkar */
   .navlink {
-    padding: 0px 10px;
+    padding: 0px 7px;
     font-size: 25px;
+  }
+
+  .navlinks {
+    margin-left: auto;
+    margin-right: 5%;
   }
 
 /* gör indexsidans huvudrubrik lite större */
@@ -181,17 +195,13 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 @media screen and (max-width: 500px){
 
 /* minskar padding och typsnitt på navigeryngsmenyns länkar */
-   .navlink {
-    padding: 0px 5px;
-    font-size: 20px;
-  }
 
-/* minskar loggans storlek */
+
   .logo {
-    width: 70px;
-    position: relative;
-    top: 15px;
-    left: 5px;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1vw;
   }
 
 /* minskar padding på navigeringsmenyns flexbox */
@@ -202,6 +212,16 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   .review-container{
     font-size: 4vw;
   }
+
+  .nav-container{
+    font-size: 5vw;
+  }
+
+  .navlink {
+    font-size: 1em;
+  }
+
+
 
 }
 
