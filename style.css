@@ -139,6 +139,7 @@ html, body {
 /* h2-elementet för de olika säsongernas rubriker */
 .sh2 {
   text-align: center;
+  z-index: 5;
 }
 
 /* div/container för cast-sidans huvdinnehåll */
