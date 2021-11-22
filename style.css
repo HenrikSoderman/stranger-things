@@ -54,28 +54,33 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 
 /* byter teckenstorlek och teckensnitt på startsidans huvudrubrik */
 .indexh1 {
-  font-size: 50px;
+  font-size: 3.5em;
   font-family: itc-benguiat, serif;
+}
+
+.review-container{
+  font-size: 2vw;
 }
 
 /* ger recensionen italic-stilen, centrerar den  */
 .reviewtext {
   font-style: italic;
   margin: auto;
+
 }
 
 /* ställer in storleken och positionerar stjärnsymbolen bredvid seriens betyg */
 .star {
-  width: 30px;
+  width: 1.5em;
   float: right;
-  margin-left: 70%;
+  margin-left: 1.5em;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 /* ställer in storleken och positionerar imdb-loggan */
 .imdb {
-  width: 70px;
+  width: 3em;
   margin: auto;
 }
 
@@ -83,9 +88,10 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 .rating {
   letter-spacing: -1px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 1.5em;
   text-align: center;
   width: 100%;
+  margin: auto;
 }
 
 /* ställer in storleken och positionerar startsidans stora bild */
@@ -159,11 +165,15 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 
 /* gör indexsidans huvudrubrik lite större */
   .indexh1 {
-    font-size: 65px;
+    font-size: 2.7em;
   }
 
   .character {
-    font-size: 70%;
+    font-size: 0.7em;
+  }
+
+  .review-container{
+    font-size: 4vw;
   }
 }
 
@@ -188,6 +198,11 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   .navlinks {
     padding: 0px 0px;
   }
+
+  .review-container{
+    font-size: 4vw;
+  }
+
 }
 
 /* centrerar länken som tar dig till toppen av sidan. */
