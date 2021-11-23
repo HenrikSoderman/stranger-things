@@ -186,10 +186,12 @@ html, body {
     font-size: 2.7em;
   }
 
-
-
   .review-container{
     font-size: 4vw;
+  }
+
+  .background {
+    display: none;
   }
 }
 
@@ -222,9 +224,6 @@ html, body {
   .navlink {
     font-size: 1em;
   }
-
-
-
 }
 
 /* centrerar länken som tar dig till toppen av sidan. */
