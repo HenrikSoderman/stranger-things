@@ -127,8 +127,10 @@ html, body {
   font-family: helvetica;
   font-weight: 700;
   letter-spacing: -2px;
-  font-size: 50px;
+  font-size: 300%;
+  margin-top: 65px;
   text-align: center;
+
 }
 
 /* en div som endast agerar som bakgrundsfärg, grå. */
@@ -147,12 +149,12 @@ html, body {
 .cast-container {
   background-color: black;
   position: absolute;
-  top: 115px;
+  top: 130px;
 }
 
 /* ställer in storleken för skådespelarnas porträtt och gör de cirkulära */
 .castimg {
-  width: 100%;
+  width: 80%;
   border-radius: 50%;
 }
 
