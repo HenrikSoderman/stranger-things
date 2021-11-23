@@ -186,12 +186,12 @@ html, body {
     font-size: 2.7em;
   }
 
-  .review-container{
-    font-size: 4vw;
-  }
-
   .background {
     display: none;
+  }
+
+  .review-container{
+    font-size: 4vw;
   }
 }
 
