@@ -17,6 +17,7 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
 
 html, body {
   overflow-x: hidden;
+  background-color: black;
 }
 
 /* styling för navigeringsmenyn. Ställer in en grå färg, hur mycket fetstil texten har, teckenstorlek, pressar ihop texten lite, z-index mm.   */
@@ -145,6 +146,8 @@ html, body {
 /* div/container för cast-sidans huvdinnehåll */
 .cast-container {
   background-color: black;
+  position: absolute;
+  top: 115px;
 }
 
 /* ställer in storleken för skådespelarnas porträtt och gör de cirkulära */
@@ -157,12 +160,10 @@ html, body {
 .character {
   text-align: center;
   width: 100%;
-  padding-top: 50%;
+  margin: auto;
 }
 
-#bob #barb {
-  padding-bottom: 50%;
-}
+
 
 /* media-query för skärmar mindre än 800px i bredd */
 @media screen and (max-width: 800px){
@@ -183,9 +184,7 @@ html, body {
     font-size: 2.7em;
   }
 
-  .character {
-    font-size: 0.7em;
-  }
+
 
   .review-container{
     font-size: 4vw;
