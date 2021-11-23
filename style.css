@@ -15,6 +15,7 @@ p{ /* paragraftextens z-index, så att den inte blockeras av bilder eller liknan
   z-index: 3;
 }
 
+/* för att motverka vitt tomrum till höger om sidan */
 html, body {
   overflow-x: hidden;
   background-color: black;
@@ -50,6 +51,7 @@ html, body {
   padding-bottom: 13px;
 }
 
+/* styling för de enskilda länkarna i navigeringsmenyn */
 .navlink {
   padding: 0px 3%;
 }
@@ -173,6 +175,7 @@ html, body {
     font-size: 25px;
   }
 
+
   .navlinks {
     margin-left: auto;
     margin-right: 5%;
@@ -183,10 +186,12 @@ html, body {
     font-size: 2.7em;
   }
 
+/* gömmer den gråa bakgrunden */
   .background {
     display: none;
   }
 
+/* textstorlek för recensions-griden */
   .review-container{
     font-size: 4vw;
   }
@@ -195,9 +200,8 @@ html, body {
 /* media-query för skärmar mindre än 500px i bredd */
 @media screen and (max-width: 500px){
 
-/* minskar padding och typsnitt på navigeryngsmenyns länkar */
 
-
+  /* Minskar loggans storlek */
   .logo {
     height: 50%;
     margin-top: auto;
@@ -205,19 +209,17 @@ html, body {
     margin-left: 1vw;
   }
 
-/* minskar padding på navigeringsmenyns flexbox */
+  /* tar bort padding på navigeringsmenyns flexbox */
   .navlinks {
     padding: 0px 0px;
   }
 
-  .review-container{
-    font-size: 4vw;
-  }
-
+  /* Minskar textstorlek i navigeringsmenyn */
   .nav-container{
     font-size: 5vw;
   }
 
+  /* teckenstorlek navigerings menyns enskilda länkar */
   .navlink {
     font-size: 1em;
   }
